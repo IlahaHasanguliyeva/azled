@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- animates -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <!-- font,icons,slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5a4b6aa97e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ===============header=============== -->
+    <header>
+      <nav>
+        <div class="container">
+          <div class="navigation">
+            <img class="logo" src=".assets/images/logo/logo_azLed.jpeg" />
+            <div class="navbar">
+              <ul class="navlist">
+                <li><a href="#" class="active">Əsas Səhifə</a></li>
+                <li><a href="./about.html" class="link">Haqqımızda</a></li>
+                <li>
+                  <a href="./products.html" class="link">Məhsullarımız</a>
+                </li>
+                <li><a href="./blog.html" class="link">Layihələr</a></li>
+                <li><a href="./contact.html" class="link">Əlaqə</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="media-menu">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+              <span>Menu</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <section class="products-section">
+        <div class="container">
+          <!-- INDOOR PRODUCTS -->
+          <div class="products indoor" data-aos="fade-up">
+            <div class="container">
+              <h2>Indoor LED Displays</h2>
+              <div class="product-grid" id="indoorContainer"></div>
+            </div>
+          </div>
+
+          <!-- OUTDOOR PRODUCTS -->
+          <div class="products outdoor" data-aos="fade-up">
+            <div class="container">
+              <h2>Outdoor LED Displays</h2>
+              <div class="product-grid" id="outdoorContainer"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ===============footer=============== -->
+    <footer>
+      <div class="container">
+        <div class="content">
+          <div class="vacation">
+            <div class="text">
+              <h2>Vacation</h2>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+            <div class="animate__animated animate__fadeInUp" id="social">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2>Information</h2>
+            <a href="#">Online Enquiry</a>
+            <a href="#">General Enquiries</a>
+            <a href="#">Booking Conditions</a>
+            <a href="#">Privacy and Policy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Call Us</a>
+          </div>
+          <div class="exp">
+            <h2>Experience</h2>
+            <a href="#">Adventure</a>
+            <a href="#">Hotel and Restaurant</a>
+            <a href="#">Beach</a>
+            <a href="#">Nature</a>
+            <a href="#">Camping</a>
+            <a href="#">Party</a>
+          </div>
+          <div class="question">
+            <h2>Have a question?</h2>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>203 Fake St. Mountain
+              View, San Francisco, California, USA
+            </p>
+            <a href="tel:+ 1235 2355 98"
+              ><i class="fa-solid fa-phone"></i>+2 392 3929 210</a
+            >
+            <a href="mailto:info@yoursite.com"
+              ><i class="fa-solid fa-paper-plane"></i> info@yourdomain.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/products.js"></script>
+  </body>
+</html>

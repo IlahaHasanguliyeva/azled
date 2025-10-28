@@ -1,571 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vacation</title>
     <!-- animates -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
     <!-- font,icons,slider -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5a4b6aa97e.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5a4b6aa97e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- ===============header=============== -->
     <header>
-        <nav>
-            <div class="container">
-                <div class="navigation">
-                    <div class="logo">
-                        <a href="#">Vacation</a>
-                        <span>TRAVEL AGENCY</span>
-                    </div>
-                    <div class="navbar">
-                        <ul class="navlist">
-                            <li ><a href="#" class="active">Home</a></li>
-                            <li><a href="./about.html" class="link">About</a></li>
-                            <li><a href="./destination.html" class="link">Destination</a></li>
-                            <li><a href="./blog.html" class="link">Blog</a></li>
-                            <li><a href="./contact.html"class="link">Contact</a></li>
-                            <li><a href="#" class="odd">Book Now</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="media-menu">
-                    <div class="menu">
-                        <i class="fa-solid fa-bars"></i>
-                        <span>Menu</span>
-                    </div>
-                </div>
+      <nav>
+        <div class="container">
+          <div class="navigation">
+            <img class="logo" src=".assets/images/logo/logo_azLed.jpeg" />
+            <div class="navbar">
+              <ul class="navlist">
+                <li><a href="#" class="active">Əsas Səhifə</a></li>
+                <li><a href="./about.html" class="link">Haqqımızda</a></li>
+                <li>
+                  <a href="./products.html" class="link">Məhsullarımız</a>
+                </li>
+                <li><a href="./blog.html" class="link">Layihələr</a></li>
+                <li><a href="./contact.html" class="link">Əlaqə</a></li>
+              </ul>
             </div>
-        </nav>
+          </div>
+          <div class="media-menu">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+              <span>Menu</span>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
-
     <!-- ===============main=============== -->
     <main>
-        <!-- Section Intro -->
-        <div class="um">
-            <section class="first">
-                <div class="overlay"></div>
-                <div class="content">
-                <div class="container">
-                            <div  class="animate__animated animate__fadeInUp" id="intro">
-                                <button ><a href="https://vimeo.com/45830194" target="_blank"><i>&#9658;</i></a></button>
-                                <span >Travel to the any corner of the world, without going around in circles</span>
-                                <h1>Make Your Tour Amazing With Us</h1>
-                            </div>
-                        <!-- search -->
-                        <form  id="search" class="animate__animated animate__fadeInUp">
-                            <div class="input">
-                                <label for="search">Destination</label>
-                                <div class="icon">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                    <input type="text" name="" id="search" placeholder="Search Place">
-                                </div>
-                            </div>
-                            <div class="input">
-                                <label for="in">Check-in date</label>
-                                <input type="date" name="" id="in">
-                            </div>
-                            <div class="input">
-                                <label for="out">Check-out date</label>
-                                <input type="date" name="" id="out">
-                            </div>
-                            <div class="input">
-                                <label for="price">Price Limit</label>
-                                <select class="price" name="" id="price">
-                                    <option value="">$5,000</option>
-                                    <option value="">$10,000</option>
-                                    <option value="">$50,000</option>
-                                    <option value="">$100,000</option>
-                                    <option value="">$200,000</option>
-                                    <option value="">$500,000</option>
-                                    <option value="">$1,000,000</option>
-                                </select>
-                            </div>
-                            <div class="button">
-                                <button type="submit" form="search">Search</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <!-- mediaquery search -->
-            <div class="search-section">
-                <div class="container">
-                    <form  class="search" class="animate__animated animate__fadeInUp">
-                        <div class="input">
-                            <label for="search">Destination</label>
-                            <div class="icon">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                                <input type="text" name="" id="search" placeholder="Search Place">
-                            </div>
-                        </div>
-                        <div class="input">
-                            <label for="in">Check-in date</label>
-                            <input type="date" name="" id="in">
-                        </div>
-                        <div class="input">
-                            <label for="out">Check-out date</label>
-                            <input type="date" name="" id="out">
-                        </div>
-                        <div class="input">
-                            <label for="price">Price Limit</label>
-                            <select class="price" name="" id="price">
-                                <option value="">$5,000</option>
-                                <option value="">$10,000</option>
-                                <option value="">$50,000</option>
-                                <option value="">$100,000</option>
-                                <option value="">$200,000</option>
-                                <option value="">$500,000</option>
-                                <option value="">$1,000,000</option>
-                            </select>
-                        </div>
-                        <div class="button">
-                            <button type="submit" form="search" id="srch">Search</button>
-                        </div>
-                    </form>
-                </div>
+      <!-- intro -->
+      <section class="intro">
+        <div class="container">
+          <div class="intro-text">
+            <div class="text" data-aos="fade-up">
+              <h3>Activities</h3>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary
+              </p>
+              <a href="#" class="intro-btn">Daha çox</a>
             </div>
+          </div>
         </div>
-
-        <!-- Section About -->
-        <section class="two" data-aos="fade-up">
-            <div class="container">
-                <div class="about">
-                    <div id="left">
-                        <div id="uppertext">
-                            <div class="text">
-                                <i class="fa-solid fa-bed"></i>
-                                <h3>Activities</h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                            </div>
-                            <div class="text">
-                                <i class="fa-solid fa-meteor"></i>
-                                <h3>Travel Arrangements</h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                            </div>
-                        </div>
-                        <div id="bottomtext" data-aos="fade-up">
-                            <div class="text">
-                                <i class="fa-solid fa-user-ninja"></i>
-                                <h3>Private Guide</h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                            </div>
-                            <div class="text">
-                                <i class="fa-solid fa-earth-europe"></i>
-                                <h3>Location Manager</h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="right">
-                        <h2>It's time to start your adventure</h2>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                        <p class="second">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        <a href="#">Search Destination</a>
-                    </div>
-                </div>
+      </section>
+      <!-- Section About -->
+      <section class="about" data-aos="fade-up">
+        <div class="container">
+          <div class="about-content">
+            <div id="left">
+              <h3>
+                AZLED şirkəti olaraq Azərbaycan, Gürcüstan və Özbəkistanda
+                sənaye tipli monitorların, səs və işıq sistemlərinin, səhnə və
+                stendlərin təmin olunmasıyla məşğuluq.
+              </h3>
+              <p>
+                Kollektivimiz 2008-ci ildən etibarən bu istiqamətdə fəaliyyətini
+                yüksək peşəkarlıqla davam etdirir. Uzunmüddətli təcrübəmizə
+                əsaslanaraq iç məkan (indoor) və çöl məkan (outdoor) LED və LCD
+                monitorların pərakəndə/topdan satışını və quraşdırılmasını,
+                onların icarəsini, bununla yanaşı həm də proqram təminatını və
+                texniki servisini həyata keçirdirik. Ən önəmlisi isə bütün
+                məhsullarımızın keyfiyyətinə güvənərək 1 ildən 5 ilədək zəmanət
+                veririk.
+              </p>
+              <p class="second">
+                AZLED şirkəti dünyanın ən nəhəng LED istehsalçılarından biri
+                olan Qiangli (Çanqli) firmasının Azərbaycandakı ilk və tək rəsmi
+                distribyutorudur. Məhz buna görə də, bazarın əsas tələbinə uygun
+                və gündəmdə olan mallar hər zaman stokumuzda mövcuddur. Həmçinin
+                müştərilərimizin özəl istəklərinə uyğun olaraq istənilən məhsulu
+                sürətli şəkildə təmin edə bilirik.
+              </p>
             </div>
-        </section>
-
-        <!-- Section three -->
-        <section class="three">
-            <div class="container">
-                <div class="img">
-                    <img src="./assets/images/xabout.jpg.pagespeed.ic.diSXLeSU2a.webp" alt="a man with boat">
-                </div>
-                <div class="img-text" data-aos="fade-up">
-                    <div class="upper">
-                        <h2>Make Your Tour Memorable and Safe With Us</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                    </div>
-                    <div class="bottom">
-                        <div class="number">
-                            <h3>300</h3>
-                            <span>Successful Tours</span>
-                        </div>
-                        <div class="number">
-                            <h3>24,000</h3>
-                            <span>Happy Tourist</span>
-                        </div>
-                        <div class="number">
-                            <h3>200</h3>
-                            <span>Place Explored</span>
-                        </div>
-                    </div>
-                </div>
+            <div id="right">
+              <img src="./assets/images/logo/logo.png" alt="" />
             </div>
-        </section>
-
-        <!-- section four best-places-->
-        <section class="four">
-            <div class="container">
-                <div class="heading" data-aos="fade-up">
-                    <h2>Best Place Destination</h2>
-                </div>
-                <div class="cards" data-aos="fade-up">
-                        <div class="card">
-                            <a href="#" class="img" id="link">
-                                <img src="./assets/images/singa.webp" alt="Singapore">
-                                <h3>Singapore</h3>
-                                <span id="tour">8 Tours</span>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="#" class="img" id="link">
-                                <img src="./assets/images/canada.webp" alt="canada">
-                                <h3>Canada</h3>
-                                <span id="tour">2 Tours</span>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="#" class="img" id="link">
-                                <img src="./assets/images/thai.webp" alt="Thailand">
-                                <h3>Thailand</h3>
-                                <span id="tour">5 Tours</span>
-                            </a>
-                        </div>
-                        <div class="card">
-                            <a href="#" class="img" id="link">
-                                <img src="./assets/images/aus.webp" alt="australia">
-                                <h3>Australia</h3>
-                                <span id="tour">5 Tours</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <!-- section partners-->
+      <section class="partners">
+        <div class="container">
+          <div class="heading" data-aos="fade-up">
+            <h2>Partnyorlarımız</h2>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper mySwiper partners" data-aos="fade-up">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/Azal.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/AzSaffron.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/BakuSteelCompany.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/BatiGozKlinikasi.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/Beatrice.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/BLGMMC.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/ExpoHome.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/KontaktHome.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/KvanGroup.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/Mado.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/MusicGallery.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/partner_logo.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/Relyon.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/SherqBazari.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/SinteksGroup.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/Tabaterra.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/images/partners/VTBBank.png" />
+              </div>
             </div>
-        </section>
-
-        <!-- section five tour-destination -->
-        <section class="five" >
-            <div class="container">
-                <div class="heading" data-aos="fade-up">
-                    <h2>Tour Destination</h2>
-                </div>
-                <div class="cards">
-                    <div class="cards-top" data-aos="fade-up">
-                            <div class="card">
-                                <div class="img">
-                                    <a href="#"><img src="./assets/images/tour destination imgs/1.webp" alt="indonesia"></a>
-                                </div>
-                                <span class="price">$300/person</span>
-                                <div class="data">
-                                    <span>8 Days Tour</span>
-                                    <a href="#">Bali, Indonesia</a>
-                                    <p>Bali, Indonesia</p>
-                                    <ul>
-                                        <li><i class="fa-solid fa-bath"></i>2</li>
-                                        <li><i class="fa-solid fa-bed"></i>3</li>
-                                        <li><i class="fa-solid fa-mountain-city"></i>Near Mountain</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="img">
-                                    <a href="#"><img src="./assets/images/tour destination imgs/2.webp" alt="indonesia"></a>
-                                </div>
-                                <span class="price">$300/person</span>
-                                <div class="data">
-                                    <span>10 Days Tour</span>
-                                    <a href="#">Bali, Indonesia</a>
-                                    <p>Bali, Indonesia</p>
-                                    <ul>
-                                        <li><i class="fa-solid fa-bath"></i>2</li>
-                                        <li><i class="fa-solid fa-bed"></i>3</li>
-                                        <li><i class="fa-solid fa-mountain-city"></i>Near Mountain</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="img">
-                                    <a href="#">
-                                        <img src="./assets/images/tour destination imgs/3.webp" alt="indonesia">
-                                    </a>
-                                </div>
-                                <span class="price">$300/person</span>
-                                <div class="data">
-                                    <span>10 Days Tour</span>
-                                    <a href="#">Bali, Indonesia</a>
-                                    <p>Bali, Indonesia</p>
-                                    <ul>
-                                        <li><i class="fa-solid fa-bath"></i>2</li>
-                                        <li><i class="fa-solid fa-bed"></i>3</li>
-                                        <li><i class="fa-solid fa-mountain-city"></i>Near Mountain</li>
-                                    </ul>
-                                </div>
-                            </div>
-                    </div>
-                    <div class="cards-bottom" data-aos="fade-up">
-                        <div class="card">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./assets/images/tour destination imgs/4.webp" alt="indonesia">
-                                </a>
-                            </div>
-                            <span class="price">$300/person</span>
-                            <div class="data">
-                                <span>8 Days Tour</span>
-                                <a href="#">Bali, Indonesia</a>
-                                <p>Bali, Indonesia</p>
-                                <ul>
-                                    <li><i class="fa-solid fa-bath"></i>2</li>
-                                    <li><i class="fa-solid fa-bed"></i>3</li>
-                                    <li><i class="fa-solid fa-mountain-city"></i>Near Mountain</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./assets/images/tour destination imgs/5.webp" alt="indonesia">
-                                </a>
-                            </div>
-                            <span class="price">$300/person</span>
-                            <div class="data">
-                                <span>10 Days Tour</span>
-                                <a href="#">Bali, Indonesia</a>
-                                <p>Bali, Indonesia</p>
-                                <ul>
-                                    <li><i class="fa-solid fa-bath"></i>2</li>
-                                    <li><i class="fa-solid fa-bed"></i>3</li>
-                                    <li><i class="fa-solid fa-mountain-city"></i>Near Mountain</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="img">
-                                <a href="#">
-                                    <img src="./assets/images/tour destination imgs/6.webp" alt="indonesia">
-                                </a>
-                            </div>
-                            <span class="price">$300/person</span>
-                            <div class="data">
-                                <span>10 Days Tour</span>
-                                <a href="#">Bali, Indonesia</a>
-                                <p>Bali, Indonesia</p>
-                                <ul>
-                                    <li><i class="fa-solid fa-bath"></i>2</li>
-                                    <li><i class="fa-solid fa-bed"></i>3</li>
-                                    <li><i class="fa-solid fa-mountain-city"></i>Near Mountain</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
+      <!-- section certificates-->
+      <section class="certificates">
+        <div class="container">
+          <div class="heading" data-aos="fade-up">
+            <h2>Sertifikatlarımız</h2>
+          </div>
+          <div class="cards" data-aos="fade-up">
+            <div class="card">
+              <a href="#" class="img" id="link">
+                <img
+                  src="./assets/images/certificates/IMG_8547.png"
+                  class="gallery-image"
+                />
+              </a>
             </div>
-        </section>
-
-        <!-- section six commentary -->
-        <section class="six">
-            <div class="container">
-                <div class="heading" data-aos="fade-up">
-                    <h2>Tourist Feedback</h2>
-                </div>
-                    <!-- Swiper -->
-                <div class="swiper mySwiper" data-aos="fade-up">
-                    <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/1.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/2.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/3.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/1.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/2.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/3.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+            <div class="card">
+              <a href="#" class="img" id="link">
+                <img
+                  src="./assets/images/certificates/IMG_8553.png"
+                  class="gallery-image"
+                />
+              </a>
             </div>
-        </section>
-
-        <!-- section severn -posts -->
-        <section class="seven">
-            <div class="container">
-                <div class="heading" data-aos="fade-up">
-                    <h2>Recent Post</h2>
-                </div>
-                <div class="posts" data-aos="fade-up">
-                    <div class="post">
-                        <div class="img">
-                            <a href="#"><img src="./assets/images/p1.webp" alt="city"></a>
-                            <div class="date">
-                                <span class="day">04</span>
-                                <div class="small-text">
-                                    <span class="mon">July</span>
-                                    <span class="year">2022</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <h3><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <div class="img">
-                            <a href="#"><img src="./assets/images/p2.webp" alt="city"></a>
-                            <div class="date">
-                                <span class="day">04</span>
-                                <div class="small-text">
-                                    <span class="mon">July</span>
-                                    <span class="year">2022</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <h3><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                    <div class="post">
-                        <div class="img">
-                            <a href="#"><img src="./assets/images/p3.webp" alt="city"></a>
-                            <div class="date">
-                                <span class="day">04</span>
-                                <div class="small-text">
-                                    <span class="mon">July</span>
-                                    <span class="year">2022</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="description">
-                            <h3><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+              <a href="#" class="img" id="link">
+                <img
+                  src="./assets/images/certificates/IMG_8557.png"
+                  class="gallery-image"
+                />
+              </a>
             </div>
-        </section>
+            <div class="card">
+              <a href="#" class="img" id="link">
+                <img
+                  src="./assets/images/certificates/IMG_8555.png"
+                  class="gallery-image"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="certificates-btn">
+            <a href="./certificates.html">Daha çox</a>
+          </div>
+        </div>
+        <div class="fullscreen-overlay" id="fullscreenOverlay">
+          <span class="close-button">&times;</span>
+          <img src="" alt="Full-screen image" id="fullscreenImage" />
+        </div>
+      </section>
     </main>
     <!-- ===============footer=============== -->
     <footer>
-        <div class="container">
-            <div class="content">
-                <div class="vacation">
-                    <div class="text">
-                        <h2>Vacation</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    </div>
-                    <div class="animate__animated animate__fadeInUp" id="social">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="info">
-                    <h2>Information</h2>
-                    <a href="#">Online Enquiry</a>
-                    <a href="#">General Enquiries</a>
-                    <a href="#">Booking Conditions</a>
-                    <a href="#">Privacy and Policy</a>
-                    <a href="#">Refund Policy</a>
-                    <a href="#">Call Us</a>
-                </div>
-                <div class="exp">
-                    <h2>Experience</h2>
-                    <a href="#">Adventure</a>
-                    <a href="#">Hotel and Restaurant</a>
-                    <a href="#">Beach</a>
-                    <a href="#">Nature</a>
-                    <a href="#">Camping</a>
-                    <a href="#">Party</a>
-                </div>
-                <div class="question">
-                    <h2>Have a question?</h2>
-                    <p><i class="fa-solid fa-location-dot"></i>203 Fake St. Mountain View, San Francisco, California, USA</p>
-                    <a href="tel:+ 1235 2355 98"><i class="fa-solid fa-phone"></i>+2 392 3929 210</a>
-                    <a href="mailto:info@yoursite.com"><i class="fa-solid fa-paper-plane"></i>	info@yourdomain.com</a>
-                </div>
+      <div class="container">
+        <div class="content">
+          <div class="vacation">
+            <div class="text">
+              <h2>Vacation</h2>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
             </div>
+            <div class="animate__animated animate__fadeInUp" id="social">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="exp">
+            <h2>Səhifələr</h2>
+            <a href="#" class="active">Əsas Səhifə</a>
+            <a href="./about.html" class="link">Haqqımızda</a>
+            <a href="./products.html" class="link">Məhsullarımız</a>
+            <a href="./blog.html" class="link">Layihələr</a>
+            <a href="./contact.html" class="link">Əlaqə</a>
+          </div>
+          <div class="question">
+            <h2>Əlaqə</h2>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>203 Fake St. Mountain
+              View, San Francisco, California, USA
+            </p>
+            <a href="tel:+ 1235 2355 98"
+              ><i class="fa-solid fa-phone"></i>+2 392 3929 210</a
+            >
+            <a href="mailto:info@yoursite.com"
+              ><i class="fa-solid fa-paper-plane"></i> info@yourdomain.com</a
+            >
+          </div>
         </div>
+      </div>
     </footer>
 
-
     <!-- scripts, swiper -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                loop: true,
-                      // Responsive breakpoints
-                    breakpoints: {
-                      520: {
-                        slidesPerView: 1,
-                        spaceBetween: 20
-                      },
-                       768: {
-                         slidesPerView: 3,
-                         spaceBetween: 30
-                     }},
-                pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                },
-            });
-            </script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: true,
+        // Responsive breakpoints
+        breakpoints: {
+          // 767: {
+          //   slidesPerView: 1,
+          //   spaceBetween: 20,
+          // },
+          768: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+        },
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+          reverseDirection: false,
+          waitForTransition: true,
+        },
+        pagination: {
+          clickable: true,
+        },
+      });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./assets/js/home.js"></script>
-</body>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

@@ -1,278 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- animates -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
     <!-- font,icons,slider -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5a4b6aa97e.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5a4b6aa97e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <!-- ===============header=============== -->
     <header>
-        <nav>
-            <div class="container">
-                <div class="navigation">
-                    <div class="logo">
-                        <a href="#">Vacation</a>
-                        <span>TRAVEL AGENCY</span>
-                    </div>
-                    <div class="navbar">
-                        <ul>
-                            <li ><a href="./home.html" class="link">Home</a></li>
-                            <li><a href="#" class="active">About</a></li>
-                            <li><a href="./destination.html" class="link">Destination</a></li>
-                            <li><a href="./blog.html" class="link">Blog</a></li>
-                            <li><a href="./contact.html"class="link">Contact</a></li>
-                            <li><a href="#" class="odd">Book Now</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="media-menu">
-                    <div class="menu">
-                        <i class="fa-solid fa-bars"></i>
-                        <span>Menu</span>
-                    </div>
-                </div>
+      <nav>
+        <div class="container">
+          <div class="navigation">
+            <img class="logo" src=".assets/images/logo/logo_azLed.jpeg" />
+            <div class="navbar">
+              <ul class="navlist">
+                <li><a href="#" class="active">Əsas Səhifə</a></li>
+                <li><a href="./about.html" class="link">Haqqımızda</a></li>
+                <li>
+                  <a href="./destination.html" class="link">Məhsullarımız</a>
+                </li>
+                <li><a href="./blog.html" class="link">Layihələr</a></li>
+                <li><a href="./contact.html" class="link">Əlaqə</a></li>
+              </ul>
             </div>
-        </nav>
+          </div>
+          <div class="media-menu">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+              <span>Menu</span>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- main -->
-    <section class="first">
-        <div class="overlay"></div>
-        <div class="content">
+    <main>
+      <!-- Section About -->
+      <section class="about" data-aos="fade-up">
         <div class="container">
-                    <div  class="animate__animated animate__fadeInUp" id="intro">
-                        <h1>About Us</h1>
-                        <div class="from">
-                            <a href="./home.html">Home ></a> 
-                            <span>About Us></span>
-                        </div>
-                    </div>
+          <div class="about-content">
+            <div id="left">
+              <h3>
+                AZLED şirkəti olaraq Azərbaycan, Gürcüstan və Özbəkistanda
+                sənaye tipli monitorların, səs və işıq sistemlərinin, səhnə və
+                stendlərin təmin olunmasıyla məşğuluq.
+              </h3>
+              <p>
+                Kollektivimiz 2008-ci ildən etibarən bu istiqamətdə fəaliyyətini
+                yüksək peşəkarlıqla davam etdirir. Uzunmüddətli təcrübəmizə
+                əsaslanaraq iç məkan (indoor) və çöl məkan (outdoor) LED və LCD
+                monitorların pərakəndə/topdan satışını və quraşdırılmasını,
+                onların icarəsini, bununla yanaşı həm də proqram təminatını və
+                texniki servisini həyata keçirdirik. Ən önəmlisi isə bütün
+                məhsullarımızın keyfiyyətinə güvənərək 1 ildən 5 ilədək zəmanət
+                veririk.
+              </p>
+              <p class="second">
+                AZLED şirkəti dünyanın ən nəhəng LED istehsalçılarından biri
+                olan Qiangli (Çanqli) firmasının Azərbaycandakı ilk və tək rəsmi
+                distribyutorudur. Məhz buna görə də, bazarın əsas tələbinə uygun
+                və gündəmdə olan mallar hər zaman stokumuzda mövcuddur. Həmçinin
+                müştərilərimizin özəl istəklərinə uyğun olaraq istənilən məhsulu
+                sürətli şəkildə təmin edə bilirik.
+              </p>
             </div>
+            <div id="right">
+              <img src="./assets/images/logo/logo.png" alt="" />
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Section About -->
-    <section class="two" data-aos="fade-up">
-        <div class="container">
-            <div class="about">
-                <div id="left">
-                    <div id="uppertext">
-                        <div class="text">
-                            <i class="fa-solid fa-bed"></i>
-                            <h3>Activities</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                        </div>
-                        <div class="text">
-                            <i class="fa-solid fa-meteor"></i>
-                            <h3>Travel Arrangements</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                        </div>
-                    </div>
-                    <div id="bottomtext" data-aos="fade-up">
-                        <div class="text">
-                            <i class="fa-solid fa-user-ninja"></i>
-                            <h3>Private Guide</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                        </div>
-                        <div class="text">
-                            <i class="fa-solid fa-earth-europe"></i>
-                            <h3>Location Manager</h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="right">
-                    <h2>It's time to start your adventure</h2>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                    <p class="second">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    <a href="#">Search Destination</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section three -->
-    <section class="three">
-                <div class="container">
-                    <div class="img">
-                        <img src="./assets/images/xabout.jpg.pagespeed.ic.diSXLeSU2a.webp" alt="a man with boat">
-                    </div>
-                    <div class="img-text" data-aos="fade-up">
-                        <div class="upper">
-                            <h2>Make Your Tour Memorable and Safe With Us</h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                        </div>
-                        <div class="bottom">
-                            <div class="number">
-                                <h3>300</h3>
-                                <span>Successful Tours</span>
-                            </div>
-                            <div class="number">
-                                <h3>24,000</h3>
-                                <span>Happy Tourist</span>
-                            </div>
-                            <div class="number">
-                                <h3>200</h3>
-                                <span>Place Explored</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </section>
-
-    <!-- section six commentary -->
-    <section class="six">
-        <div class="container">
-            <div class="heading" data-aos="fade-up">
-                <h2>Tourist Feedback</h2>
-            </div>
-                <!-- Swiper -->
-            <div class="swiper mySwiper" data-aos="fade-up">
-                <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="userdata">
-                        <img src="./assets/images/users/1.webp" alt="user">
-                        <div class="username">
-                            <p class="name">Roger Scott</p>
-                            <span>Marketing Manager</span>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/2.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/3.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/1.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/2.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <div class="userdata">
-                            <img src="./assets/images/users/3.webp" alt="user">
-                            <div class="username">
-                                <p class="name">Roger Scott</p>
-                                <span>Marketing Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </section>
+      </section>
+    </main>
     <!-- ===============footer=============== -->
     <footer>
-        <div class="container">
-            <div class="content">
-                <div class="vacation">
-                    <div class="text">
-                        <h2>Vacation</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    </div>
-                    <div class="animate__animated animate__fadeInUp" id="social">
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="info">
-                    <h2>Information</h2>
-                    <a href="#">Online Enquiry</a>
-                    <a href="#">General Enquiries</a>
-                    <a href="#">Booking Conditions</a>
-                    <a href="#">Privacy and Policy</a>
-                    <a href="#">Refund Policy</a>
-                    <a href="#">Call Us</a>
-                </div>
-                <div class="exp">
-                    <h2>Experience</h2>
-                    <a href="#">Adventure</a>
-                    <a href="#">Hotel and Restaurant</a>
-                    <a href="#">Beach</a>
-                    <a href="#">Nature</a>
-                    <a href="#">Camping</a>
-                    <a href="#">Party</a>
-                </div>
-                <div class="question">
-                    <h2>Have a question?</h2>
-                    <p><i class="fa-solid fa-location-dot"></i>203 Fake St. Mountain View, San Francisco, California, USA</p>
-                    <a href="tel:+ 1235 2355 98"><i class="fa-solid fa-phone"></i>+2 392 3929 210</a>
-                    <a href="mailto:info@yoursite.com"><i class="fa-solid fa-paper-plane"></i>	info@yourdomain.com</a>
-                </div>
+      <div class="container">
+        <div class="content">
+          <div class="vacation">
+            <div class="text">
+              <h2>Vacation</h2>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
             </div>
+            <div class="animate__animated animate__fadeInUp" id="social">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="info">
+            <h2>Information</h2>
+            <a href="#">Online Enquiry</a>
+            <a href="#">General Enquiries</a>
+            <a href="#">Booking Conditions</a>
+            <a href="#">Privacy and Policy</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Call Us</a>
+          </div>
+          <div class="exp">
+            <h2>Experience</h2>
+            <a href="#">Adventure</a>
+            <a href="#">Hotel and Restaurant</a>
+            <a href="#">Beach</a>
+            <a href="#">Nature</a>
+            <a href="#">Camping</a>
+            <a href="#">Party</a>
+          </div>
+          <div class="question">
+            <h2>Have a question?</h2>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>203 Fake St. Mountain
+              View, San Francisco, California, USA
+            </p>
+            <a href="tel:+ 1235 2355 98"
+              ><i class="fa-solid fa-phone"></i>+2 392 3929 210</a
+            >
+            <a href="mailto:info@yoursite.com"
+              ><i class="fa-solid fa-paper-plane"></i> info@yourdomain.com</a
+            >
+          </div>
         </div>
+      </div>
     </footer>
 
-        <!-- scripts, swiper -->
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                    loop: true,
-                          // Responsive breakpoints
-                        breakpoints: {
-                          520: {
-                            slidesPerView: 1,
-                            spaceBetween: 20
-                          },
-                           768: {
-                             slidesPerView: 3,
-                             spaceBetween: 30
-                         }},
-                    pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    },
-                });
-                </script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="./assets/js/home.js"></script>
-    </body>
-    </html>
+    <!-- scripts, swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        // Responsive breakpoints
+        breakpoints: {
+          520: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
