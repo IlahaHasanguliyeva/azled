@@ -8,8 +8,8 @@
 // Variables
 $myFont: "Poppins", sans-serif;
 // colors
-$primaryColor: #0c3c60;
-$secondaryColor: #8abbdb;
+$primaryColor: #0c2463;
+$secondaryColor: rgb(189, 229, 255);
 
 $dark-text: rgba(0, 0, 0, 0.8);
 $light-text: #999999;
@@ -45,15 +45,23 @@ $light-text: #999999;
   width: 1110px;
   margin: 0 auto;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 // header
 header {
   flex-wrap: wrap;
   transition: 0.3s;
+  #home-nav {
+    background-color: transparent;
+    position: absolute;
+  }
   nav {
-    position: fixed;
-    padding-top: 16px;
+    padding-top: 14px;
     z-index: 15;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
     align-items: center;
     background-color: $primaryColor;
     width: 100%;
@@ -69,11 +77,13 @@ header {
         justify-content: space-between;
         align-items: center;
         transition: 0.3s;
-        .logo {
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-          object-fit: contain;
+        .logo-container {
+          width: 10%;
+          .logo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
         }
         ul {
           display: flex;
@@ -99,7 +109,7 @@ header {
               color: #fff;
             }
             a:hover {
-              color: $secondaryColor;
+              color: rgb(189, 229, 255);
               transition: 0.3s;
             }
           }
@@ -111,26 +121,33 @@ header {
 
 .intro {
   @include section-pad();
-  height: 95vh;
+  height: 100vh;
+  background: url("../images/intro.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
   .container {
     .intro-text {
       .text {
-        h3 {
+        h1 {
           font-family: $myFont;
-          font-size: 48px;
+          font-size: 80px;
           font-weight: 600;
+          color: white;
+          margin-bottom: 20px;
         }
         p {
           font-family: $myFont;
           font-size: 18px;
           font-weight: 400;
+          color: white;
+          margin-bottom: 40px;
         }
         .intro-btn {
           font-family: $myFont;
           display: inline-block;
           padding: 10px 20px;
           margin-top: 10px;
-          background-color: $primaryColor;
+          background-color: rgb(28, 92, 189);
           color: white;
           text-decoration: none;
           border-radius: 40px;
@@ -139,11 +156,6 @@ header {
           &:hover {
             background-color: #1a659e;
           }
-
-          //   &:focus {
-          //     outline: 2px solid #0056b3;
-          //     outline-offset: 2px;
-          //   }
         }
       }
     }
@@ -153,7 +165,7 @@ header {
 .about {
   @include section-pad();
   width: 100%;
-  background-color: #f9fafb;
+  background-color: white;
   .container {
     .about-content {
       width: 100%;
@@ -190,22 +202,23 @@ header {
       }
       #right {
         width: 40%;
+        height: 100%;
         img {
           max-width: 100%;
           max-height: 100%;
           object-fit: contain;
           display: block;
-          padding-bottom: 130px;
+          padding-bottom: 30px;
         }
       }
     }
   }
 }
 
-// Four section
 .certificates {
   width: 100%;
   background-color: white;
+  padding-top: 62px;
   padding-bottom: 162px;
   .container {
     max-width: 1200px; // Standard container width
@@ -291,8 +304,6 @@ header {
     }
   }
 }
-
-// Full-screen overlay
 .fullscreen-overlay {
   display: none;
   position: fixed;
@@ -331,13 +342,13 @@ header {
   }
 }
 
-// section six commentary
 .partners {
   flex-wrap: wrap;
   width: 100%;
   @include section-pad();
 
-  .container {
+  .swiper-container {
+    width: 100%;
     .heading {
       display: flex;
       justify-content: center;
@@ -372,7 +383,6 @@ header {
   }
 }
 
-// products
 .products-section {
   width: 100%;
   background-color: white;
@@ -506,15 +516,10 @@ header {
   }
 }
 
-//product details
-// =============================================
-// PRODUCT DETAIL PAGE – SCSS
-// =============================================
-
-main {
-  padding-block: clamp(3rem, 8vw, 6rem);
-  background: #f8f9fa;
-  min-height: 100vh;
+.product-detail {
+  padding-block: clamp(3rem, 3vw, 6rem);
+  background: white;
+  // min-height: 100vh;
 }
 
 .container-product {
@@ -522,8 +527,6 @@ main {
   margin: 0 auto;
   padding: 30px 50px;
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 
   #conditions {
@@ -595,28 +598,128 @@ main {
   }
 }
 
-// Responsive tweaks
-@media (max-width: 768px) {
-  #title {
-    text-align: center;
-  }
-
-  #excerpt {
-    padding: 0.8rem;
-    font-size: 1rem;
-  }
-
-  #conditions.conditions {
-    padding-left: 1.5rem;
-    font-size: 0.95rem;
+#info {
+  padding: 112px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .card {
+      width: 25%;
+      text-align: center;
+      i {
+        text-align: center;
+        font-size: 28px;
+        color: white;
+        padding: 22px 22px;
+        background: $primaryColor;
+        border-radius: 50%;
+        margin-bottom: 30px;
+      }
+      h3 {
+        text-align: center;
+        font-family: $myFont;
+        line-height: 1.5;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+      p {
+        @include p-text();
+      }
+      a {
+        text-align: center;
+        text-decoration: none;
+        font-family: $myFont;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+      }
+    }
   }
 }
 
-// footer
+.location {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  .container {
+    width: 100%;
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  min-height: 300px;
+  background: url("../images/banner.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+
+  // Dark overlay
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    animation: fadeInUp 1s ease-out;
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      margin: 0;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+      font-family: $myFont;
+    }
+
+    p {
+      font-size: clamp(1rem, 3vw, 1.5rem);
+      margin: 1rem 0 0;
+      opacity: 0.9;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 footer {
   flex-wrap: wrap;
-  background-color: #333;
-  padding: 112px 0;
+  align-items: center;
+  background-color: $primaryColor;
+  padding: 30px 0;
+  .container-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
   h2 {
     font-family: $myFont;
     margin-bottom: 40px;
@@ -630,30 +733,16 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    .vacation {
+    .footer-logo {
+      margin-top: 40px;
       width: 20%;
-      p {
-        @include p-text();
-      }
-      #social {
-        margin-top: 10px;
-        cursor: pointer;
-        a {
-          i {
-            color: white;
-            font-size: 22px;
-            width: 46px;
-            height: 46px;
-            text-align: center;
-            padding-top: 12px;
-            background-color: #393f46;
-            border-radius: 50%;
-          }
-        }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
     }
-    .info {
-      width: 20%;
+    .pages {
       display: flex;
       flex-direction: column;
       a {
@@ -661,46 +750,34 @@ footer {
         font-size: 16px;
         font-family: $myFont;
         font-weight: 400;
-        color: #999999;
+        color: $secondaryColor;
         margin-bottom: 10px;
         text-align: left;
       }
     }
-    .exp {
-      width: 20%;
+    .contact {
+      width: 30%;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       a {
         text-decoration: none;
         font-size: 16px;
         font-family: $myFont;
         font-weight: 400;
-        color: #999999;
-        margin-bottom: 10px;
-        text-align: left;
-      }
-    }
-    .question {
-      width: 20%;
-      display: flex;
-      flex-direction: column;
-      a {
-        text-decoration: none;
-        font-size: 16px;
-        font-family: $myFont;
-        font-weight: 400;
-        color: #999999;
+        color: $secondaryColor;
         margin-bottom: 10px;
         text-align: left;
         i {
           margin-right: 10px;
         }
       }
+
       p {
         font-size: 16px;
         font-family: $myFont;
         font-weight: 400;
-        color: #999999;
+        color: $secondaryColor;
         margin-bottom: 10px;
         text-align: left;
         i {
@@ -711,8 +788,6 @@ footer {
   }
 }
 
-// Media - tablets
-
 @media screen and (max-width: 768px) {
   .container {
     width: 90%;
@@ -720,6 +795,7 @@ footer {
   }
 
   header {
+    background-color: $primaryColor;
     nav {
       position: relative;
       height: fit-content;
@@ -758,11 +834,14 @@ footer {
           .navbar {
             display: none;
             ul {
+              margin-top: 20px;
               flex-direction: column;
               justify-content: flex-start;
               align-items: flex-start;
-              margin-bottom: 30px;
               transition: 0.4s;
+              li {
+                margin-top: 10px;
+              }
             }
           }
         }
@@ -777,21 +856,14 @@ footer {
   nav.scroll {
     height: fit-content;
   }
-
-  // .first{
-  //     .content{
-  //         .container{
-  //             #search{
-  //                 flex-direction: column;
-  //             }
-  //         }
-  //     }
-  // }
 }
 
 // Media - phones
 @media screen and (max-width: 520px) {
   header {
+    #home-nav {
+      background-color: $primaryColor;
+    }
     nav {
       position: relative;
       height: fit-content;
@@ -940,7 +1012,6 @@ footer {
     }
   }
 
-  // four best place destination
   .certificates {
     .container {
       .heading {
@@ -1034,5 +1105,209 @@ footer {
         margin-bottom: 30px;
       }
     }
+  }
+}
+
+// Projects Grid
+.projects {
+  min-height: 100vh;
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+.project-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  display: block;
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  // Only show title on hover
+  .card-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4); // light tint, optional
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; // allows click on card
+
+    h3 {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: $myFont;
+      text-align: center;
+      margin: 0;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  // Hover: lift card + show title
+  &:hover {
+    transform: translateY(-8px);
+
+    img {
+      transform: scale(1.05);
+    }
+
+    .card-overlay {
+      opacity: 1;
+    }
+  }
+}
+// Project Detail
+.project-detail {
+  min-height: 100vh;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+
+  h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  .desc {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: zoom-in;
+    transition: 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+// Lightbox
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1000;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #lightbox-img {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .close-lightbox {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    img {
+      width: 30px;
+      filter: invert(1);
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+
+    &.prev {
+      left: 2rem;
+    }
+    &.next {
+      right: 2rem;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+  }
+}
+
+// Back Button
+.back-btn {
+  display: inline-block;
+  margin: 2rem;
+  color: $primaryColor;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Responsive tweaks
+@media (max-width: 768px) {
+  #title {
+    text-align: center;
+  }
+
+  #excerpt {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+  #conditions.conditions {
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
   }
 }

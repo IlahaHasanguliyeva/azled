@@ -4,16 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vacation</title>
-    <!-- animates -->
+    <title>AZLED</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favico/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <!-- Css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/home.css" />
-    <!-- font,icons,slider -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
@@ -28,12 +26,13 @@
     ></script>
   </head>
   <body>
-    <!-- ===============header=============== -->
     <header>
-      <nav>
+      <nav id="home-nav">
         <div class="container">
           <div class="navigation">
-            <img class="logo" src=".assets/images/logo/logo_azLed.jpeg" />
+            <div class="logo-container">
+              <img class="logo" src="./assets/images/logo/logo.png" />
+            </div>
             <div class="navbar">
               <ul class="navlist">
                 <li><a href="#" class="active">Əsas Səhifə</a></li>
@@ -41,7 +40,7 @@
                 <li>
                   <a href="./products.html" class="link">Məhsullarımız</a>
                 </li>
-                <li><a href="./blog.html" class="link">Layihələr</a></li>
+                <li><a href="./projects.html" class="link">Layihələr</a></li>
                 <li><a href="./contact.html" class="link">Əlaqə</a></li>
               </ul>
             </div>
@@ -55,25 +54,19 @@
         </div>
       </nav>
     </header>
-    <!-- ===============main=============== -->
     <main>
-      <!-- intro -->
       <section class="intro">
         <div class="container">
           <div class="intro-text">
             <div class="text" data-aos="fade-up">
-              <h3>Activities</h3>
-              <p>
-                A small river named Duden flows by their place and supplies it
-                with the necessary
-              </p>
-              <a href="#" class="intro-btn">Daha çox</a>
+              <h1>AZLED Event</h1>
+              <p>“AZLED - Hər kadrda keyfiyyət, hər pikseldə etibar.”</p>
+              <a href="#about" class="intro-btn">Daha çox</a>
             </div>
           </div>
         </div>
       </section>
-      <!-- Section About -->
-      <section class="about" data-aos="fade-up">
+      <section class="about" id="about" data-aos="fade-up">
         <div class="container">
           <div class="about-content">
             <div id="left">
@@ -103,17 +96,16 @@
             </div>
             <div id="right">
               <img src="./assets/images/logo/logo.png" alt="" />
+              <img src="./assets/images/logo/giangli_logo.png" alt="" />
             </div>
           </div>
         </div>
       </section>
-      <!-- section partners-->
       <section class="partners">
-        <div class="container">
+        <div class="swiper-container">
           <div class="heading" data-aos="fade-up">
             <h2>Partnyorlarımız</h2>
           </div>
-          <!-- Swiper -->
           <div class="swiper mySwiper partners" data-aos="fade-up">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -171,7 +163,6 @@
           </div>
         </div>
       </section>
-      <!-- section certificates-->
       <section class="certificates">
         <div class="container">
           <div class="heading" data-aos="fade-up">
@@ -221,56 +212,46 @@
         </div>
       </section>
     </main>
-    <!-- ===============footer=============== -->
     <footer>
-      <div class="container">
+      <div class="container-footer">
         <div class="content">
-          <div class="vacation">
-            <div class="text">
-              <h2>Vacation</h2>
-              <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
-              </p>
-            </div>
-            <div class="animate__animated animate__fadeInUp" id="social">
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+          <div class="footer-logo">
+            <img src="./assets/images/logo/logo.png" />
           </div>
-          <div class="exp">
+          <div class="pages">
             <h2>Səhifələr</h2>
-            <a href="#" class="active">Əsas Səhifə</a>
+            <a href="./home.html" class="active">Əsas Səhifə</a>
             <a href="./about.html" class="link">Haqqımızda</a>
             <a href="./products.html" class="link">Məhsullarımız</a>
-            <a href="./blog.html" class="link">Layihələr</a>
+            <a href="./projects.html" class="link">Layihələr</a>
             <a href="./contact.html" class="link">Əlaqə</a>
           </div>
-          <div class="question">
+          <div class="contact">
             <h2>Əlaqə</h2>
             <p>
-              <i class="fa-solid fa-location-dot"></i>203 Fake St. Mountain
-              View, San Francisco, California, USA
+              <i class="fa-solid fa-location-dot"></i>Bakı şəhəri, Nərimanov
+              rayonu, Ziya Bünyadov pr. 19/65, bina 6 (Çinar Park, Biznes
+              Mərkəzi)
             </p>
-            <a href="tel:+ 1235 2355 98"
-              ><i class="fa-solid fa-phone"></i>+2 392 3929 210</a
+            <p>
+              <i class="fa-solid fa-phone"></i>+994-050-228-20-11 <br />
+              +994-050-228-20-48
+            </p>
+            <a href="info@azled.az"
+              ><i class="fa-solid fa-paper-plane"></i>info@azled.az</a
             >
-            <a href="mailto:info@yoursite.com"
-              ><i class="fa-solid fa-paper-plane"></i> info@yourdomain.com</a
-            >
+            <a><i class="fa-brands fa-instagram"></i>azled_event</a>
           </div>
         </div>
       </div>
     </footer>
-
     <!-- scripts, swiper -->
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 10,
+        centeredSlides: true,
         centeredSlides: true,
         loop: true,
         // Responsive breakpoints
@@ -285,7 +266,7 @@
           },
         },
         autoplay: {
-          delay: 2000,
+          delay: 1500,
           disableOnInteraction: false,
           pauseOnMouseEnter: true,
           reverseDirection: false,

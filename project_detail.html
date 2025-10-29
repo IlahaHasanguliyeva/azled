@@ -51,40 +51,19 @@
       </nav>
     </header>
     <main>
-      <section class="about" data-aos="fade-up">
-        <div class="container">
-          <div class="about-content">
-            <div id="left">
-              <h3>
-                AZLED şirkəti olaraq Azərbaycan, Gürcüstan və Özbəkistanda
-                sənaye tipli monitorların, səs və işıq sistemlərinin, səhnə və
-                stendlərin təmin olunmasıyla məşğuluq.
-              </h3>
-              <p>
-                Kollektivimiz 2008-ci ildən etibarən bu istiqamətdə fəaliyyətini
-                yüksək peşəkarlıqla davam etdirir. Uzunmüddətli təcrübəmizə
-                əsaslanaraq iç məkan (indoor) və çöl məkan (outdoor) LED və LCD
-                monitorların pərakəndə/topdan satışını və quraşdırılmasını,
-                onların icarəsini, bununla yanaşı həm də proqram təminatını və
-                texniki servisini həyata keçirdirik. Ən önəmlisi isə bütün
-                məhsullarımızın keyfiyyətinə güvənərək 1 ildən 5 ilədək zəmanət
-                veririk.
-              </p>
-              <p class="second">
-                AZLED şirkəti dünyanın ən nəhəng LED istehsalçılarından biri
-                olan Qiangli (Çanqli) firmasının Azərbaycandakı ilk və tək rəsmi
-                distribyutorudur. Məhz buna görə də, bazarın əsas tələbinə uygun
-                və gündəmdə olan mallar hər zaman stokumuzda mövcuddur. Həmçinin
-                müştərilərimizin özəl istəklərinə uyğun olaraq istənilən məhsulu
-                sürətli şəkildə təmin edə bilirik.
-              </p>
-            </div>
-            <div id="right">
-              <img src="./assets/images/logo/logo.png" alt="" />
-            </div>
-          </div>
-        </div>
+      <section class="project-detail">
+        <h1 id="project-title">Loading...</h1>
+        <p id="project-desc" class="desc"></p>
+        <div class="gallery" id="gallery"></div>
       </section>
+      <div class="lightbox" id="lightbox">
+        <img src="" alt="" id="lightbox-img" />
+        <button class="close-lightbox" id="close-lightbox">
+          <span class="close-button">&times;</span>
+        </button>
+        <button class="nav prev" id="prev-btn">Previous</button>
+        <button class="nav next" id="next-btn">Next</button>
+      </div>
     </main>
     <footer>
       <div class="container-footer">
@@ -94,10 +73,10 @@
           </div>
           <div class="pages">
             <h2>Səhifələr</h2>
-            <a href="#" class="active">Əsas Səhifə</a>
+            <a href="./home.html" class="active">Əsas Səhifə</a>
             <a href="./about.html" class="link">Haqqımızda</a>
             <a href="./products.html" class="link">Məhsullarımız</a>
-            <a href="./blog.html" class="link">Layihələr</a>
+            <a href="./products.html" class="link">Layihələr</a>
             <a href="./contact.html" class="link">Əlaqə</a>
           </div>
           <div class="contact">
@@ -120,6 +99,6 @@
       </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/project_detail.js"></script>
   </body>
 </html>
