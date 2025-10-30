@@ -5,7 +5,7 @@ const indoorProducts = [
   {
     id: 1,
     type: "indoor",
-    img: "./assets/images/products/indoor/P1.8Indoor.jpg",
+    img: "./assets/images/products/indoor/P1.8Indoor.avif",
     title: "P1.8 Indoor LED Display",
     excerpt:
       "“P1.8” tipli indoor LED ekranlar, yüksək dəqiqlik üçün nəzərdə tutulub. Piksel aralığı ~1.8 mm ilə çox yaxın baxış məsafələrində təmiz görüntü verir. Əsas olaraq konfrans zalı, nəzarət otağı, studiya, alış-veriş mərkəzi kimi yerlərdə istifadə olunur. Keyfiyyətli seçim edərkən piksel aralığı, parlaqlıq, yeniləmə tezliyi, servis imkanı, enerji, baxış bucağı kimi parametrlərə diqqətlə baxmaq lazımdır.",
@@ -21,7 +21,7 @@ const indoorProducts = [
   {
     id: 2,
     type: "indoor",
-    img: "./assets/images/products/indoor/P2.0indoor.jpg",
+    img: "./assets/images/products/indoor/P2.0indoor.avif",
     title: "P2.0 Indoor LED Screen",
     excerpt:
       "“P2.0” tipli indoor LED ekranlar, piksel aralığı təxminən 2 mm olan yüksək dəqiqlikli indoor ekran texnologiyasıdır. Yaxın baxış məsafəsi tələb olunan yerlər (məs., satış mərkəzi, brend mağazası, konfrans zalı) üçün uyğundur. Seçim edərkən piksel aralığı, parlaqlıq, yeniləmə tezliyi, baxış bucağı, enerji istehlakı və montaj/servis imkanları kimi parametrlərə diqqət edilməlidir.",
@@ -36,7 +36,7 @@ const indoorProducts = [
   {
     id: 3,
     type: "indoor",
-    img: "./assets/images/products/indoor/P2.5indoor.jpg",
+    img: "./assets/images/products/indoor/P2.5indoor.avif",
     title: "P2.5 Indoor LED Screen",
     excerpt:
       "“P2.5” indoor LED ekranlar, piksel aralığı ~ 2,5 mm olan yüksək dəqiqlikli indoor ekran texnologiyasıdır. Yaxın baxış məsafəsi tələb olunan yerlər üçün optimal balans təqdim edir: çox ultra-fine (məs: P1.8) deyil, lakin standart daha iri pitch olan variantlardan (məs: P3-P4) görkəmli dərəcədə daha yüksək dəqiqlik verir. Seçim edərkən xüsusilə piksel aralığı, parlaqlıq, yeniləmə tezliyi, baxış bucağı, enerji istehlakı və montaj / servis imkanlarına diqqət etmək lazımdır.",
@@ -50,7 +50,7 @@ const indoorProducts = [
   {
     id: 4,
     type: "indoor",
-    img: "./assets/images/products/indoor/P3.0Indoor.jpg",
+    img: "./assets/images/products/indoor/P3.0Indoor.avif",
     title: "P3.0 Indoor LED Screen",
     excerpt:
       "“P3.0” indoor LED ekranlar, piksel aralığı təxminən 3 mm olan yüksək dəqiqlikli indoor ekran texnologiyasıdır. Yaxın baxış məsafəsi tələb olunan yerlər üçün (məs: mağazalar, konfrans zalı, lobi sahəsi) uyğundur və orta səviyyədə “fine pitch” seçimi sayılır (məs: P1.8 və ya P2.0-dan daha az yüksək dəqiqlik, lakin P4-dən daha yüksək). Seçim edərkən xüsusilə piksel aralığı, parlaqlıq, yeniləmə tezliyi, baxış bucağı, enerji istehlakı və montaj/servis imkanlarına diqqət etmək lazımdır.",
@@ -64,7 +64,7 @@ const indoorProducts = [
   {
     id: 5,
     type: "indoor",
-    img: "./assets/images/products/indoor/P4.0Indoor.jpg",
+    img: "./assets/images/products/indoor/P4.0Indoor.avif",
     title: "P4.0 Indoor LED Screen",
     excerpt:
       "“P4.0” indoor LED ekranlar, piksel aralığı təxminən 4 mm olan orta səviyyəli indoor LED ekran texnologiyasıdır. Çox incə detal tələb edən tətbiqlər üçün (məs: ultra-yaxın baxış məsafəsi olan vitrinlərdə) P2.5 və ya daha aşağı pitch daha müvafiq ola bilər; lakin P4 çox-saylı istifadə halları üçün — məsələn mağaza vitrinləri, konfrans zalı ekranları, xətdəki reklam panelləri — yaxşı balans təqdim edir. Seçim edərkən xüsusilə piksel aralığı, parlaqlıq, yeniləmə tezliyi, baxış bucağı, enerji istehlakı və montaj/servis imkanlarına diqqət etmək lazımdır.",
@@ -96,7 +96,7 @@ const outdoorProducts = [
   {
     id: 102,
     type: "outdoor",
-    img: "./assets/images/products/outdoor/P3.0outdoor.jpg",
+    img: "./assets/images/products/outdoor/P3.0outdoor.avif",
     title: "P3.0 Outdoor LED Billboard",
     excerpt:
       "“P3.0” outdoor LED ekranlar, piksel aralığı təxminən 3 mm olan, açıq sahə üçün nəzərdə tutulmuş yüksək dəqiqlikli LED ekran texnologiyasıdır. Günəş işığı altında görünürlüğü yaxşıdır, reklam, stadion, açıq meydan istifadə üçün uyğundur. Seçərkən əsas diqqət ediləcək parametrlər: piksel aralığı, parlaqlıq, yeniləmə tezliyi, IP qoruma səviyyəsi, enerji istehlakı, modul/kabinet ölçüsü və servis imkanı.",
@@ -111,7 +111,7 @@ const outdoorProducts = [
   {
     id: 103,
     type: "outdoor",
-    img: "./assets/images/products/outdoor/P4.0outdoor.jpg",
+    img: "./assets/images/products/outdoor/P4.0outdoor.avif",
     title: "P4.0 Outdoor LED Billboard",
     excerpt:
       "“P4.0” Outdoor LED ekranlar, piksel aralığı təxminən 4 mm olan, açıq sahə üçün nəzərdə tutulmuş yüksək keyfiyyətli LED ekran sistemləridir. Günəş işığı altında görünürlük, dayanıqlıq və geniş baxış bucağı kimi şərtləri təmin etmək üçün hazırlanmışdır. Seçim edərkən əsas diqqət ediləcək parametrlər:	Piksel aralığı (4 mm) və baxış məsafəsi Parlaqlıq və gün işığı altında görünürlük,  Yeniləmə tezliyi və video performansı, IP qoruma səviyyəsi və açıq sahə şərtlərinə uyğunluq, Güc istehlakı və istilik yayımlaması, Montaj və servis imkanları,",
@@ -126,7 +126,7 @@ const outdoorProducts = [
   {
     id: 104,
     type: "outdoor",
-    img: "./assets/images/products/outdoor/P5Outdoor.jpg",
+    img: "./assets/images/products/outdoor/P5Outdoor.avif",
     title: "P5 Outdoor Digital Sign",
     excerpt:
       "“P5.0” Outdoor LED monitorlar, piksel aralığı təxminən 5 mm açıq hava şəraitində istifadə üçün nəzərdə tutulmuş yüksək parlaqlıq və davamlılığa malik ekranlardır.",
