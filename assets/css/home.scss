@@ -45,7 +45,7 @@ $light-text: #999999;
 }
 // container
 .container {
-  width: 1110px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -273,7 +273,6 @@ header {
 
     .card {
       width: 23%;
-      height: 320px;
       position: relative;
 
       a {
