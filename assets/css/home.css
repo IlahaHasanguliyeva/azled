@@ -188,6 +188,7 @@ header nav .container .navigation ul li a:hover {
   background-color: white;
   padding-top: 62px;
   padding-bottom: 162px;
+  min-height: 100vh;
 }
 .certificates .container {
   max-width: 1200px;
