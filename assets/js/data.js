@@ -81,7 +81,7 @@ const outdoorProducts = [
   {
     id: 101,
     type: "outdoor",
-    img: "./assets/images/products/outdoor/P2.5Outdoor.webp",
+    img: "./assets/images/products/outdoor/P2.5Outdoor.avif",
     title: "P2.5 Outdoor LED Billboard",
     excerpt:
       "“P2.5” Outdoor LED ekranlar, piksel aralığı təxminən 2,5 mm olan, yüksək dəqiqlikli açıq sahə ekran texnologiyasıdır. Gün işığının altında görünürlüğü qorumaq üçün yüksək parlaqlıq, IP qoruma səviyyəsi, ciddi montaj və enerji-hava şərtlərinə uyğun dizayn tələb olunur. Seçim edərkən xüsusilə piksel aralığı, parlaqlıq, yeniləmə tezliyi, IP qoruma səviyyəsi, enerji istehlakı və servis imkanlarına diqqət yetirmək lazımdır.",
