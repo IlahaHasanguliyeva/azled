@@ -165,10 +165,31 @@ header {
   }
 }
 
+#about-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/about_bg.avif") center/cover no-repeat;
+  .container {
+    .about-content {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      #left {
+        h3 {
+          color: white;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
 .about {
   @include section-pad();
   width: 100%;
-
   .container {
     .about-content {
       width: 100%;
@@ -179,7 +200,6 @@ header {
       #left {
         width: 55%;
         h3 {
-          color: white;
           font-family: $myFont;
           font-size: 20px;
           font-weight: 600;
@@ -189,7 +209,6 @@ header {
         p {
           @include p-text();
           margin-bottom: 16px;
-          color: white;
         }
         .second {
           margin-bottom: 30px;

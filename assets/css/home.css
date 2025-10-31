@@ -127,6 +127,23 @@ header nav .container .navigation ul li a:hover {
   background-color: #1a659e;
 }
 
+#about-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/about_bg.avif") center/cover no-repeat;
+}
+#about-page .container .about-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#about-page .container .about-content #left h3 {
+  color: white;
+}
+#about-page .container .about-content #left p {
+  color: white;
+}
+
 .about {
   padding: 162px 0;
   width: 100%;
@@ -142,7 +159,6 @@ header nav .container .navigation ul li a:hover {
   width: 55%;
 }
 .about .container .about-content #left h3 {
-  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -156,7 +172,6 @@ header nav .container .navigation ul li a:hover {
   color: #999999;
   line-height: 1.8;
   margin-bottom: 16px;
-  color: white;
 }
 .about .container .about-content #left .second {
   margin-bottom: 30px;
