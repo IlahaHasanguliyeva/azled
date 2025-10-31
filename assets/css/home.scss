@@ -124,7 +124,8 @@ header {
 .intro {
   @include section-pad();
   height: 100vh;
-  background: url("../images/intro.avif") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/intro.avif") center/cover no-repeat;
   display: flex;
   align-items: center;
   .container {
@@ -132,14 +133,14 @@ header {
       .text {
         h1 {
           font-family: "Momo Trust Display", sans-serif;
-          font-size: 80px;
+          font-size: 86px;
           font-weight: 600;
           color: white;
           margin-bottom: 20px;
         }
         p {
           font-family: $myFont;
-          font-size: 18px;
+          font-size: 22px;
           font-weight: 400;
           color: white;
           margin-bottom: 40px;
@@ -167,7 +168,8 @@ header {
 .about {
   @include section-pad();
   width: 100%;
-  background-color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/about_bg.avif") center/cover no-repeat;
   .container {
     .about-content {
       width: 100%;
@@ -178,6 +180,7 @@ header {
       #left {
         width: 55%;
         h3 {
+          color: white;
           font-family: $myFont;
           font-size: 20px;
           font-weight: 600;
@@ -187,6 +190,7 @@ header {
         p {
           @include p-text();
           margin-bottom: 16px;
+          color: white;
         }
         .second {
           margin-bottom: 30px;
@@ -228,7 +232,6 @@ header {
   .container {
     max-width: 1200px; // Standard container width
     margin: 0 auto;
-    padding: 0 15px;
     .heading {
       display: flex;
       justify-content: center;

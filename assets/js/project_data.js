@@ -98,6 +98,138 @@ const projects = [
     ],
   },
   // Add more...
+  {
+    id: 10,
+    title: "AZLED",
+    thumb: "./assets/images/projects/azled/prj1.avif",
+    images: [
+      "./assets/images/projects/azled/prj1.avif",
+      "./assets/images/projects/azled/prj2.avif",
+      "./assets/images/projects/azled/prj3.avif",
+      "./assets/images/projects/azled/prj4.avif",
+    ],
+  },
+  {
+    id: 11,
+    title: "Deichmann",
+    thumb: "./assets/images/projects/deichmann/prj1.avif",
+    images: [
+      "./assets/images/projects/deichmann/prj1.avif",
+      "./assets/images/projects/deichmann/prj2.avif",
+      "./assets/images/projects/deichmann/prj3.avif",
+      "./assets/images/projects/deichmann/prj4.avif",
+      "./assets/images/projects/deichmann/prj5.avif",
+      "./assets/images/projects/deichmann/prj6.avif",
+    ],
+  },
+  {
+    id: 12,
+    title: "Ermanno",
+    thumb: "./assets/images/projects/ermanno/prj1.avif",
+    images: ["./assets/images/projects/ermanno/prj1.avif"],
+  },
+  {
+    id: 13,
+    title: "ExpoHome",
+    thumb: "./assets/images/projects/expohome/prj.avif",
+    images: [
+      "./assets/images/projects/expohome/prj.avif",
+      "./assets/images/projects/expohome/prj2.avif",
+    ],
+  },
+  {
+    id: 14,
+    title: "Flormar",
+    thumb: "./assets/images/projects/flormar/prj1.avif",
+    images: [
+      "./assets/images/projects/flormar/prj1.avif",
+      "./assets/images/projects/flormar/prj2.avif",
+    ],
+  },
+  {
+    id: 15,
+    title: "Kremlin",
+    thumb: "./assets/images/projects/kremlin/prj1.avif",
+    images: [
+      "./assets/images/projects/kremlin/prj1.avif",
+      "./assets/images/projects/kremlin/prj2.avif",
+      "./assets/images/projects/kremlin/prj3.avif",
+    ],
+  },
+  {
+    id: 16,
+    title: "Meridian",
+    thumb: "./assets/images/projects/meridian/prj1.avif",
+    images: [
+      "./assets/images/projects/meridian/prj1.avif",
+      "./assets/images/projects/meridian/prj2.avif",
+      "./assets/images/projects/meridian/prj3.avif",
+      "./assets/images/projects/meridian/prj4.avif",
+      "./assets/images/projects/meridian/prj5.avif",
+    ],
+  },
+  {
+    id: 17,
+    title: "Mini Mall",
+    thumb: "./assets/images/projects/mini_mall/prj1.avif",
+    images: [
+      "./assets/images/projects/mini_mall/prj1.avif",
+      "./assets/images/projects/mini_mall/prj2.avif",
+    ],
+  },
+  {
+    id: 18,
+    title: "Modis",
+    thumb: "./assets/images/projects/modis/prj1.avif",
+    images: [
+      "./assets/images/projects/modis/prj1.avif",
+      "./assets/images/projects/modis/prj2.avif",
+      "./assets/images/projects/modis/prj3.avif",
+    ],
+  },
+  {
+    id: 19,
+    title: "Neftçilər Mall",
+    thumb: "./assets/images/projects/neftchilar_mall/prj1.avif",
+    images: [
+      "./assets/images/projects/neftchilar_mall/prj1.avif",
+      "./assets/images/projects/neftchilar_mall/prj2.avif",
+      "./assets/images/projects/neftchilar_mall/prj3.avif",
+    ],
+  },
+  {
+    id: 20,
+    title: "Şərq Bazarı",
+    thumb: "./assets/images/projects/sherq_bazar/prj1.avif",
+    images: [
+      "./assets/images/projects/sherq_bazar/prj1.avif",
+      "./assets/images/projects/sherq_bazar/prj2.avif",
+      "./assets/images/projects/sherq_bazar/prj3.avif",
+      "./assets/images/projects/sherq_bazar/prj4.avif",
+      "./assets/images/projects/sherq_bazar/prj5.avif",
+    ],
+  },
+  {
+    id: 21,
+    title: "VTB",
+    thumb: "./assets/images/projects/vtb/prj1.avif",
+    images: [
+      "./assets/images/projects/vtb/prj1.avif",
+      "./assets/images/projects/vtb/prj2.avif",
+      "./assets/images/projects/vtb/prj3.avif",
+    ],
+  },
+  {
+    id: 22,
+    title: "Xan Qızı",
+    thumb: "./assets/images/projects/xan_qiz/prj1.avif",
+    images: [
+      "./assets/images/projects/xan_qiz/prj1.avif",
+      "./assets/images/projects/xan_qiz/prj2.avif",
+      "./assets/images/projects/xan_qiz/prj3.avif",
+      "./assets/images/projects/xan_qiz/prj4.avif",
+    ],
+  },
 ];
 
 export { projects };
